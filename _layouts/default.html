@@ -1,28 +1,6 @@
-<!DOCTYPE html>
-<html>
-
-  {% include head.html %}
-
-    <body>
-
-    {% include header.html %}
-
-    <div class="page-content">
-      <div class="wrap">
-      {{ content }}
-      </div>
-    </div>
-    {% if paginator.previous_page %}
-    {% if paginator.previous_page == 1 %}
-    « Previous
-    {% else %}
-    « Previous
-    {% endif %}
-    {% endif %}
-    {% if paginator.next_page %} 
-    Next »
-    {% endif %} 
-    {% include footer.html %}
-
-    </body>
-</html>
+---
+theme :
+  name : bootstrap-3
+---
+{% include JB/setup %}
+{% include themes/bootstrap-3/default.html %}
